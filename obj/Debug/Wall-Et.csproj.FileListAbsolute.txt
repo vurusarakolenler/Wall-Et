@@ -1,0 +1,12 @@
+c:\users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\bin\Debug\Wall-Et.exe.config
+c:\users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\bin\Debug\Wall-Et.exe
+c:\users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\bin\Debug\Wall-Et.pdb
+c:\users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\obj\Debug\Wall-Et.csprojResolveAssemblyReference.cache
+c:\users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\obj\Debug\Wall_Et.Properties.Resources.resources
+c:\users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\obj\Debug\Wall-Et.csproj.GenerateResource.Cache
+c:\users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\obj\Debug\Wall-Et.exe
+c:\users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\obj\Debug\Wall-Et.pdb
+C:\Users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\obj\Debug\Wall_Et.AnaMenu.resources
+C:\Users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\obj\Debug\Wall_Et.FormEkle.resources
+C:\Users\anyma\documents\visual studio 2015\Projects\Wall-Et\Wall-Et\bin\Debug\System.Net.Http.dll
+C:\Users\anyma\Documents\Visual Studio 2015\Projects\Wall-Et\Wall-Et\bin\Debug\System.Net.Http.xml
