@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Data.SqlClient;
 using System.Web;
 using System.Windows.Forms.Design;
 
@@ -16,9 +17,9 @@ namespace Wall_Et
     public partial class AnaMenu : Form
     {
         int Miktar = 0;
-        OleDbConnection veriler = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0 ;Data Source=data.accdb");
+       /* OleDbConnection veriler = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0 ;Data Source=data.accdb");
         OleDbCommand sorgu = new OleDbCommand();
-        DataTable tablo = new DataTable();
+        DataTable tablo = new DataTable();*/
         int btnClick = 0;
 
         public static FormEkle FormEkle;
@@ -52,14 +53,14 @@ namespace Wall_Et
 
         private void button1_Click(object sender, EventArgs e)
         {
-            veriler.Open();
+            //veriler.Open();
             int yeniMiktar = int.Parse(yeni_miktar.Text);
             //int Miktar = int.Parse(miktar.Text);
             Miktar += yeniMiktar;
 
             miktar.Text = Miktar.ToString() + " ₺";
 
-            OleDbDataAdapter adtr = new OleDbDataAdapter("Select * From wallet", veriler);
+           /* OleDbDataAdapter adtr = new OleDbDataAdapter("Select * From wallet", veriler);
             adtr.Fill(tablo);
             dataGridView1.DataSource = tablo;
             dataGridView1.Columns[0].HeaderText = "İşlem No";
@@ -69,21 +70,27 @@ namespace Wall_Et
             dataGridView1.Columns[4].HeaderText = "Tür";
             dataGridView1.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect;
 
-            veriler.Close();
+            veriler.Close();*/
+
+            SqlConnection baglanti = new SqlConnection(@"server =.\SQLEXPRESS; database = wallet; Trusted_Connection=Yes");
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("INSERT INTO data(IslemNo) VALUES (1)", baglanti);
+                
+            komut.ExecuteNonQuery();
 
         }
 
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            veriler.Open();
+           // veriler.Open();
             int yeniMiktar = int.Parse(yeni_miktar.Text);
             //int Miktar = int.Parse(miktar.Text);
             Miktar += yeniMiktar;
 
             miktar.Text = Miktar.ToString() + " ₺";
 
-            OleDbDataAdapter adtr = new OleDbDataAdapter("Select * From wallet", veriler);
+            /*OleDbDataAdapter adtr = new OleDbDataAdapter("Select * From wallet", veriler);
             adtr.Fill(tablo);
             dataGridView1.DataSource = tablo;
             dataGridView1.Columns[0].HeaderText = "İşlem No";
@@ -93,7 +100,7 @@ namespace Wall_Et
             dataGridView1.Columns[4].HeaderText = "Tür";
             dataGridView1.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect;
 
-            veriler.Close();
+            veriler.Close();*/
         }
 
         private void pictureBox4_MouseHover(object sender, EventArgs e)

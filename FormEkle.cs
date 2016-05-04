@@ -25,17 +25,17 @@ namespace Wall_Et
 
         }
 
-        OleDbConnection veriler = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0 ;Data Source=data.accdb");
+       /* OleDbConnection veriler = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0 ;Data Source=data.accdb");
         OleDbCommand sorgu = new OleDbCommand();
-        DataTable tablo = new DataTable();
+        DataTable tablo = new DataTable();*/
 
         private void button1_Click(object sender, EventArgs e)
         {
-            veriler.Open();
+           /* veriler.Open();
             sorgu.Connection = veriler;
             sorgu.CommandText = "INSERT INTO wallet (miktar) VALUES ('" + textBox1.Text + "')";
             sorgu.ExecuteNonQuery();
-            veriler.Close();
+            veriler.Close();*/
         }
     }
 }
